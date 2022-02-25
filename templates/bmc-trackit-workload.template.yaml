@@ -369,30 +369,32 @@ Parameters:
 
 Mappings:
   AWSAMIRegionMap:
-    af-south-1:                     # Africa (Cape Town)
-      x64: ami-0ea7566a69e1b2f94
-    ca-central-1:                   # Canada (Central)
-      x64: ami-0af19eaad86555f07
-    eu-central-1:                   # Europe (Frankfurt)
-      x64: ami-0a9dca9ee2d5b2797
-    eu-north-1:                     # Europe (Stockholm)
-      x64: ami-01261c7e8f303352e
-    eu-south-1:                     # Europe (Milan)
-      x64: ami-04ad4f2b3a6c81361
-    eu-west-1:                      # Europe (Ireland)
-      x64: ami-0fd5388ed798f9ffd
-    eu-west-2:                      # Europe (London)
-      x64: ami-072ac9c4dd637152c
-    eu-west-3:                      # Europe (Paris)
-      x64: ami-0e3d2f1adba852559
-    us-east-1:                      # US East (N. Virginia)
-      x64: ami-023d0496ff199d665
-    us-east-2:                      # US East (Ohio)
-      x64: ami-073e3bcca376d56e0
-    us-west-1:                      # US West (N. California)
-      x64: ami-027afc07d1fe973c2
-    us-west-2:                      # US West (Oregon)
-      x64: ami-0aa473dd2f41e3a02     
+    AMI: 
+      x64: Track-It-SQL2019Web-20.20.03.107-English-*
+    af-south-1:                      # Africa (Cape Town)
+      x64: ami-0e7829b0c49b4e009
+    ca-central-1:                    # Canada (Central)
+      x64: ami-05ef01728a366392c
+    eu-central-1:                    # Europe (Frankfurt)
+      x64: ami-08272da85c01443b8
+    eu-north-1:                      # Europe (Stockholm)
+      x64: ami-067d74e75187da08c
+    eu-south-1:                      # Europe (Milan)
+      x64: ami-0251566eef16a1419
+    eu-west-1:                       # Europe (Ireland)
+      x64: ami-09e2b713e5dca6650
+    eu-west-2:                       # Europe (London)
+      x64: ami-013c33f52ff6a1112
+    eu-west-3:                       # Europe (Paris)
+      x64: ami-0650290f3924f3d12
+    us-east-1:                       # US East (N. Virginia)
+      x64: ami-00f53d55daa684799
+    us-east-2:                       # US East (Ohio)
+      x64: ami-05d19b5fefe147e00
+    us-west-1:                       # US West (N. California)
+      x64: ami-0b19b3671c169ad90
+    us-west-2:                       # US West (Oregon)
+      x64: ami-0a5d058786cf882d6   
      
   # BMC Track-It! Environment Sizes
   # See https://docs.bmc.com/docs/trackit2020/en/sizing-and-scalability-considerations-912125648.html
@@ -1160,7 +1162,7 @@ Resources:
               command:
                 powershell.exe
                   -Command "Start-Service 'BMC Client Management'"
-              waitAfterCompletion: '300'
+              waitAfterCompletion: '360'
 
           services:
             windows:
