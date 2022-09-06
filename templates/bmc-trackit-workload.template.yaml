@@ -895,7 +895,7 @@ Resources:
     Type: AWS::EC2::Instance
     CreationPolicy:
       ResourceSignal:
-        Timeout: PT45M
+        Timeout: PT90M
     Metadata:
       cfn-lint:
         config:
